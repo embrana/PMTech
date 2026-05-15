@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Protocolo PM | Senior Software PM</title>
+    <meta
+      name="description"
+      content="Sitio estático de protocolo de trabajo para Senior Software PM: roadmap, delivery, capacidad, vendors, integraciones, riesgos, incidentes y mejora continua."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Ir al inicio">
+        <span class="brand-mark" aria-hidden="true">PM</span>
+        <span>
+          <strong>Protocolo PM</strong>
+          <small>Senior Software PM</small>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <a href="#fit">Fit JD</a>
+        <a href="#protocol">Protocolo</a>
+        <a href="#plan">Plan 90</a>
+        <a href="#backlog">Backlog</a>
+        <a href="#evidence">Evidencia</a>
+      </nav>
+      <button class="icon-button" type="button" id="printSite" aria-label="Exportar o imprimir sitio">
+        <span aria-hidden="true">PDF</span>
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <p class="eyebrow">Senior Software PM · Operations/Projects · TAG</p>
+          <h1 id="hero-title">Protocolo PM para convertir prioridad de negocio en entrega confiable.</h1>
+          <p class="hero-copy">
+            Mi modalidad de trabajo une estrategia, capacidad real, control de alcance, métricas de flujo,
+            gestión de vendors e incidentes en un sistema operativo claro para negocio e ingeniería.
+          </p>
+          <div class="hero-actions" aria-label="Acciones principales">
+            <a class="button primary" href="#protocol">Ver protocolo operativo</a>
+            <a class="button secondary" href="#evidence">Ver evidencia fuente</a>
+          </div>
+          <dl class="hero-proof" aria-label="Resumen de evidencias">
+            <div>
+              <dt>7</dt>
+              <dd>sistemas de trabajo</dd>
+            </div>
+            <div>
+              <dt>9</dt>
+              <dd>documentos fuente</dd>
+            </div>
+            <div>
+              <dt>19</dt>
+              <dd>mapas e infografías</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section brief-band" aria-labelledby="brief-title">
+        <div class="container">
+          <div class="section-kicker">Recruiter decision brief</div>
+          <div class="section-heading">
+            <h2 id="brief-title">Lo que este sitio demuestra</h2>
+            <p>
+              No presenta una lista de tareas. Presenta una forma de operar: cómo traduzco objetivos,
+              protejo foco, coordino dependencias y hago visible el delivery antes de que aparezcan sorpresas.
+            </p>
+          </div>
+          <div class="brief-grid">
+            <article class="metric-card">
+              <span class="metric-label">Prioridad</span>
+              <strong>Roadmap realista</strong>
+              <p>Trabajo con CEO y Head of Development para convertir outcomes en una ventana Now-Next-Later con capacidad explícita.</p>
+            </article>
+            <article class="metric-card">
+              <span class="metric-label">Control</span>
+              <strong>Scope guardrails</strong>
+              <p>BRD → PRD → TSD/SDD, DoR estricto, MoSCoW y control formal de cambios para frenar scope creep.</p>
+            </article>
+            <article class="metric-card">
+              <span class="metric-label">Ejecución</span>
+              <strong>Throughput visible</strong>
+              <p>Uso Lead Time, Cycle Time, Throughput, WIP y RAG para explicar compromisos con datos, no con optimismo.</p>
+            </article>
+            <article class="metric-card">
+              <span class="metric-label">Riesgo</span>
+              <strong>Integraciones gobernadas</strong>
+              <p>Vendor scorecards, SLAs/SLOs, dependencia stewardship, PoCs tempranas y runbooks para incidentes.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="fit" aria-labelledby="fit-title">
+        <div class="container">
+          <div class="section-kicker">Job description → protocolo</div>
+          <div class="section-heading">
+            <h2 id="fit-title">Matriz de alineación con Senior Software PM</h2>
+            <p>
+              Cada responsabilidad de la JD se traduce en un mecanismo operativo, una evidencia visible y una métrica
+              de control. Esto permite hablar con negocio e ingeniería con el mismo mapa.
+            </p>
+          </div>
+          <div class="fit-table" role="table" aria-label="Matriz de ajuste con la descripción del rol">
+            <div class="fit-row fit-head" role="row">
+              <span role="columnheader">Responsabilidad TAG</span>
+              <span role="columnheader">Cómo la opero</span>
+              <span role="columnheader">Artefacto observable</span>
+            </div>
+            <div class="fit-row" role="row">
+              <span role="cell">Program & Roadmap Management</span>
+              <span role="cell">Outcomes, RICE/WSJF, capacidad 70-80%, rolling roadmap y cadencias semanal/mensual/trimestral.</span>
+              <span role="cell">Now-Next-Later, roadmap review, registro de dependencias.</span>
+            </div>
+            <div class="fit-row" role="row">
+              <span role="cell">Scope Management & Delivery Accountability</span>
+              <span role="cell">BRD → PRD → TSD, DoR, MoSCoW, change control, buffers y seguimiento por flujo.</span>
+              <span role="cell">Definition of Ready, WBS, out-of-scope list, tablero de delivery.</span>
+            </div>
+            <div class="fit-row" role="row">
+              <span role="cell">Engineering Operations</span>
+              <span role="cell">Capacidad neta, focus factor, skill matrix, WIP limits, scenario planning y health monitor.</span>
+              <span role="cell">Calculadora de capacidad, matriz de habilidades, CFD, métricas DORA.</span>
+            </div>
+            <div class="fit-row" role="row">
+              <span role="cell">Cross-functional Communication</span>
+              <span role="cell">Audiencias diferenciadas, single source of truth, RAG, updates ejecutivos y crisis framework.</span>
+              <span role="cell">Communication plan, dashboard self-service, formato Problema → Impacto → Mitigación → Solicitud.</span>
+            </div>
+            <div class="fit-row" role="row">
+              <span role="cell">Integrations & External Vendors</span>
+              <span role="cell">Vendor scorecards, APIs profundas, tokenización, Blue-Green, SLOs internos y QBRs.</span>
+              <span role="cell">Integration brief, SLA/SLO sheet, dependency map, offboarding plan.</span>
+            </div>
+            <div class="fit-row" role="row">
+              <span role="cell">Risk & Incident Management</span>
+              <span role="cell">Risk register, risky work first, owners, incident command, runbooks y post-mortems sin culpa.</span>
+              <span role="cell">Risk register, RACI, status page, post-mortem action items.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section protocol-section" id="protocol" aria-labelledby="protocol-title">
+        <div class="container">
+          <div class="section-kicker">Sistema operativo PM</div>
+          <div class="section-heading wide">
+            <h2 id="protocol-title">Siete playbooks para operar software, no perseguir tickets</h2>
+            <p>
+              La información de la carpeta PMTech se reorganizó como arquitectura de decisión: entradas,
+              fases, controles, entregables y señales de alerta por dominio.
+            </p>
+          </div>
+          <div class="protocol-shell">
+            <div class="tab-list" id="protocolTabs" role="tablist" aria-label="Playbooks PM"></div>
+            <article class="protocol-panel" id="protocolPanel" tabindex="0"></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section flow-band" aria-labelledby="flow-title">
+        <div class="container">
+          <div class="section-kicker">Blueprint of execution</div>
+          <div class="section-heading">
+            <h2 id="flow-title">Del negocio al código, sin perder trazabilidad</h2>
+            <p>
+              El punto de control no es el documento en sí: es que cada decisión mantenga una línea clara
+              entre ROI, funcionalidad, arquitectura, backlog, release y aprendizaje.
+            </p>
+          </div>
+          <ol class="execution-flow">
+            <li>
+              <span>01</span>
+              <strong>BRD · Why</strong>
+              <p>Objetivo de negocio, ROI, restricciones comerciales, impacto esperado.</p>
+            </li>
+            <li>
+              <span>02</span>
+              <strong>PRD · What</strong>
+              <p>Usuarios, historias, criterios de aceptación, scope y out-of-scope.</p>
+            </li>
+            <li>
+              <span>03</span>
+              <strong>TSD/SDD · How</strong>
+              <p>Arquitectura, APIs, datos, seguridad, dependencias, riesgos técnicos.</p>
+            </li>
+            <li>
+              <span>04</span>
+              <strong>Backlog · Ready</strong>
+              <p>DoR, estimación, owner, MoSCoW, dependencias y pruebas.</p>
+            </li>
+            <li>
+              <span>05</span>
+              <strong>Release · Learn</strong>
+              <p>Entrega incremental, monitoreo, comunicación, métricas y retroalimentación.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section tools-section" aria-labelledby="tools-title">
+        <div class="container">
+          <div class="section-kicker">Herramientas operativas</div>
+          <div class="section-heading wide">
+            <h2 id="tools-title">Dos controles que vuelven tangible el protocolo</h2>
+            <p>
+              La entrevista mejora cuando el recruiter puede ver cómo se toman decisiones. Estos módulos muestran
+              cómo convierto capacidad y riesgo en conversaciones concretas.
+            </p>
+          </div>
+          <div class="tool-grid">
+            <article class="tool-card capacity-tool" aria-labelledby="capacity-title">
+              <h3 id="capacity-title">Calculadora de capacidad neta</h3>
+              <p>
+                Modelo rápido para estimar compromiso saludable sin vender el 100% del equipo.
+              </p>
+              <div class="control-grid">
+                <label>
+                  Ingenieros
+                  <input type="text" inputmode="numeric" pattern="[0-9]*" id="teamSize" value="6">
+                </label>
+                <label>
+                  Días del sprint
+                  <input type="text" inputmode="numeric" pattern="[0-9]*" id="sprintDays" value="10">
+                </label>
+                <label>
+                  Focus factor
+                  <input type="range" id="focusFactor" min="60" max="90" value="78">
+                  <output id="focusValue">78%</output>
+                </label>
+                <label>
+                  Buffer no planificado
+                  <input type="range" id="bufferFactor" min="10" max="35" value="25">
+                  <output id="bufferValue">25%</output>
+                </label>
+              </div>
+              <dl class="capacity-result" aria-live="polite">
+                <div>
+                  <dt>Capacidad bruta</dt>
+                  <dd id="grossCapacity">60 días-persona</dd>
+                </div>
+                <div>
+                  <dt>Compromiso recomendado</dt>
+                  <dd id="commitCapacity">35 días-persona</dd>
+                </div>
+                <div>
+                  <dt>Reserva explícita</dt>
+                  <dd id="reserveCapacity">15 días-persona</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="tool-card risk-tool" aria-labelledby="risk-title">
+              <h3 id="risk-title">Triage de riesgo de delivery</h3>
+              <p>
+                Lectura ejecutiva simple para decidir si una iniciativa entra, se reduce o se difiere.
+              </p>
+              <div class="risk-board">
+                <div class="risk-axis" aria-hidden="true">
+                  <span>Impacto alto</span>
+                  <span>Impacto bajo</span>
+                </div>
+                <div class="risk-grid" aria-label="Matriz de riesgo">
+                  <button type="button" class="risk-cell high" data-risk="Crítico: reducir scope, PoC temprana y owner ejecutivo.">Alta / Alto</button>
+                  <button type="button" class="risk-cell medium" data-risk="Controlado: mitigación activa, buffer y revisión semanal.">Media / Alto</button>
+                  <button type="button" class="risk-cell medium" data-risk="Vigilar: mantener en registro de riesgos y validar supuestos.">Alta / Bajo</button>
+                  <button type="button" class="risk-cell low" data-risk="Aceptable: documentar y monitorear sin bloquear flujo.">Baja / Bajo</button>
+                </div>
+              </div>
+              <p class="risk-output" id="riskOutput">Selecciona una celda para ver la acción PM recomendada.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section plan-section" id="plan" aria-labelledby="plan-title">
+        <div class="container">
+          <div class="section-kicker">Plan de trabajo</div>
+          <div class="section-heading">
+            <h2 id="plan-title">Primeros 90 días: entrar, ordenar y acelerar sin romper confianza</h2>
+            <p>
+              Este plan está pensado para TAG: una organización donde el PM necesita conectar negocio, desarrollo,
+              integraciones externas y predictibilidad operativa.
+            </p>
+          </div>
+          <div class="timeline">
+            <article class="timeline-item">
+              <span>Días 1-30</span>
+              <h3>Diagnóstico y visibilidad</h3>
+              <ul>
+                <li>Mapear roadmap actual, compromisos, vendors, incidentes recientes y fuentes de verdad.</li>
+                <li>Auditar backlog, estados reales, WIP, dependencias y criterios de ready/done.</li>
+                <li>Instalar un dashboard RAG mínimo con riesgos, hitos y bloqueos críticos.</li>
+              </ul>
+            </article>
+            <article class="timeline-item">
+              <span>Días 31-60</span>
+              <h3>Control y cadencia</h3>
+              <ul>
+                <li>Rediseñar workflow Jira/Linear con triage, DoR, WIP limits y automatizaciones de PR.</li>
+                <li>Implementar capacity planning con focus factor, buffers y reserva de mantenimiento.</li>
+                <li>Formalizar vendor cadence: daily técnico cuando aplique, sync semanal y QBR.</li>
+              </ul>
+            </article>
+            <article class="timeline-item">
+              <span>Días 61-90</span>
+              <h3>Predictibilidad y mejora</h3>
+              <ul>
+                <li>Pasar de estimaciones manuales a lectura probabilística con throughput histórico.</li>
+                <li>Conectar métricas de flujo con retrospectivas y 1-3 mejoras accionables por ciclo.</li>
+                <li>Presentar roadmap Now-Next-Later ajustado a capacidad, riesgos y outcomes de negocio.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section backlog-section" id="backlog" aria-labelledby="backlog-title">
+        <div class="container">
+          <div class="section-kicker">Backlog funcional del sitio</div>
+          <div class="section-heading wide">
+            <h2 id="backlog-title">Funcionalidades construidas para sostener la conversación</h2>
+            <p>
+              Este backlog convierte la intención de entrevista en producto: cada historia tiene valor para recruiter,
+              aceptación observable y estado finalizado.
+            </p>
+          </div>
+          <div class="backlog-controls" aria-label="Filtros de backlog">
+            <div class="segmented" role="group" aria-label="Filtrar por área">
+              <button type="button" class="filter-button active" data-filter="all">Todo</button>
+              <button type="button" class="filter-button" data-filter="roadmap">Roadmap</button>
+              <button type="button" class="filter-button" data-filter="delivery">Delivery</button>
+              <button type="button" class="filter-button" data-filter="ops">Ops</button>
+              <button type="button" class="filter-button" data-filter="evidence">Evidencia</button>
+            </div>
+            <label class="search-label">
+              Buscar
+              <input type="search" id="backlogSearch" placeholder="Ej. vendor, riesgo, RAG">
+            </label>
+          </div>
+          <div class="backlog-grid" id="backlogGrid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section artifacts-section" aria-labelledby="artifacts-title">
+        <div class="container">
+          <div class="section-kicker">Artefactos PM</div>
+          <div class="section-heading">
+            <h2 id="artifacts-title">Kit de gestión que llevaría al rol</h2>
+            <p>
+              Estos artefactos son la capa práctica del protocolo. Sirven para ordenar conversaciones difíciles,
+              evitar ambigüedad y dejar decisiones auditables.
+            </p>
+          </div>
+          <div class="artifact-grid">
+            <article class="artifact-card">
+              <h3>Roadmap OS</h3>
+              <p>Now-Next-Later, score RICE/WSJF, capacidad disponible, dependencias y riesgos por iniciativa.</p>
+            </article>
+            <article class="artifact-card">
+              <h3>Scope Contract</h3>
+              <p>BRD, PRD, TSD/SDD, WBS, out-of-scope, MoSCoW y change request con impacto explícito.</p>
+            </article>
+            <article class="artifact-card">
+              <h3>Delivery Cockpit</h3>
+              <p>Lead Time, Cycle Time, Throughput, WIP, DORA, CFD, RAG y percentiles de compromiso.</p>
+            </article>
+            <article class="artifact-card">
+              <h3>Vendor Control Room</h3>
+              <p>Scorecard técnico, SLA/SLO, API readiness, dependency map, QBR, security checklist y offboarding.</p>
+            </article>
+            <article class="artifact-card">
+              <h3>Incident Command Pack</h3>
+              <p>Risk register, RACI, runbooks, status cadence, post-mortem sin culpa y action items con owner.</p>
+            </article>
+            <article class="artifact-card">
+              <h3>Continuous Improvement Loop</h3>
+              <p>Backlog DEEP, triage semanal, automatizaciones Jira/Linear, retrospectivas con datos y experimentos.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section evidence-section" id="evidence" aria-labelledby="evidence-title">
+        <div class="container">
+          <div class="section-kicker">Evidencia y fuente</div>
+          <div class="section-heading wide">
+            <h2 id="evidence-title">Biblioteca visual y documentos base</h2>
+            <p>
+              La galería usa los mapas e infografías de la carpeta original como prueba de profundidad. Los documentos
+              fuente quedan enlazados para revisar el razonamiento completo detrás de cada playbook.
+            </p>
+          </div>
+          <div class="gallery" id="gallery"></div>
+          <div class="source-ledger">
+            <h3>Documentos fuente incluidos</h3>
+            <ul>
+              <li><a href="assets/sources/senior-software-pm-operations-strategy.docx">Senior Software Program Management Operations and Strategy</a></li>
+              <li><a href="assets/sources/strategic-roadmap-framework.docx">Strategic Framework for Program and Roadmap Management</a></li>
+              <li><a href="assets/sources/scope-delivery-excellence.docx">The Five Pillars of Scope and Delivery Excellence</a></li>
+              <li><a href="assets/sources/engineering-capacity-workflow.docx">Engineering Operations: Capacity and Resource Planning Workflow</a></li>
+              <li><a href="assets/sources/business-tech-communication-workflow.docx">Bridging Business and Tech: Stakeholder Communication Workflow</a></li>
+              <li><a href="assets/sources/vendor-integration-governance.docx">Framework for Strategic Vendor and Integration Governance</a></li>
+              <li><a href="assets/sources/risk-incident-management.docx">Strategic Framework for Risk and Incident Management</a></li>
+              <li><a href="assets/sources/process-continuous-improvement.docx">Strategic Workflow for Process and Continuous Improvement</a></li>
+              <li><a href="assets/sources/business-to-code-blueprints.docx">Blueprints of Execution: The Path from Business to Code</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section english-section" aria-labelledby="english-title">
+        <div class="container two-column">
+          <div>
+            <div class="section-kicker">English-ready summary</div>
+            <h2 id="english-title">How I would explain this in the interview</h2>
+          </div>
+          <div class="english-copy">
+            <p>
+              I operate as the bridge between business priorities and engineering capacity. My focus is to create
+              delivery predictability without hiding complexity: roadmap commitments must be tied to outcomes,
+              technical feasibility, dependencies, buffers, and measurable flow metrics.
+            </p>
+            <p>
+              For integrations and vendors, I manage the work as a dependency system: clear scope, API readiness,
+              SLA/SLO controls, risk ownership, release strategy, and communication cadence. When incidents happen,
+              I separate command, operations, and communications so the team can resolve quickly and stakeholders
+              receive clear updates.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="image-dialog" id="imageDialog" aria-labelledby="dialogTitle">
+      <form method="dialog">
+        <button class="dialog-close" aria-label="Cerrar vista ampliada">×</button>
+      </form>
+      <h2 id="dialogTitle"></h2>
+      <img id="dialogImage" alt="">
+    </dialog>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Protocolo PM estático construido desde la carpeta PMTech para conversación de entrevista Senior Software PM.</p>
+        <a href="#top">Volver arriba</a>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
