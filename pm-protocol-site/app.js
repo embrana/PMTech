@@ -303,9 +303,12 @@ const protocolTabs = document.querySelector("#protocolTabs");
 const protocolPanel = document.querySelector("#protocolPanel");
 const backlogGrid = document.querySelector("#backlogGrid");
 const searchInput = document.querySelector("#backlogSearch");
+const printButton = document.querySelector("#printSite");
+const capacityInputs = document.querySelectorAll("#teamSize, #sprintDays, #focusFactor, #bufferFactor");
 let currentFilter = "all";
 
 function renderProtocol(index = 0) {
+  if (!protocolTabs || !protocolPanel) return;
   const item = protocols[index];
 
   protocolTabs.innerHTML = protocols
@@ -373,6 +376,7 @@ function renderProtocol(index = 0) {
 }
 
 function renderBacklog() {
+  if (!backlogGrid || !searchInput) return;
   const query = searchInput.value.trim().toLowerCase();
   const filteredItems = backlogItems.filter((item) => {
     const matchesFilter = currentFilter === "all" || item.area === currentFilter;
@@ -405,6 +409,7 @@ function renderBacklog() {
 
 function renderGallery() {
   const gallery = document.querySelector("#gallery");
+  if (!gallery) return;
   gallery.innerHTML = evidenceItems
     .map(
       ([file, title, caption]) => `
@@ -424,6 +429,7 @@ function renderGallery() {
   const dialog = document.querySelector("#imageDialog");
   const dialogImage = document.querySelector("#dialogImage");
   const dialogTitle = document.querySelector("#dialogTitle");
+  if (!dialog || !dialogImage || !dialogTitle) return;
 
   gallery.querySelectorAll(".gallery-button").forEach((button) => {
     button.addEventListener("click", () => {
@@ -438,30 +444,40 @@ function renderGallery() {
 }
 
 function updateCapacity() {
+  if (!capacityInputs.length) return;
   const readNumber = (selector, fallback, min, max) => {
-    const raw = Number(document.querySelector(selector).value);
+    const element = document.querySelector(selector);
+    if (!element) return fallback;
+    const raw = Number(element.value);
     if (!Number.isFinite(raw)) return fallback;
     return Math.min(max, Math.max(min, raw));
   };
   const team = readNumber("#teamSize", 6, 1, 50);
   const days = readNumber("#sprintDays", 10, 1, 30);
-  const focus = Number(document.querySelector("#focusFactor").value);
-  const buffer = Number(document.querySelector("#bufferFactor").value);
+  const focus = readNumber("#focusFactor", 78, 60, 90);
+  const buffer = readNumber("#bufferFactor", 25, 10, 35);
 
   const gross = team * days;
   const focusAdjusted = gross * (focus / 100);
   const reserve = focusAdjusted * (buffer / 100);
   const commitment = focusAdjusted - reserve;
 
-  document.querySelector("#focusValue").textContent = `${focus}%`;
-  document.querySelector("#bufferValue").textContent = `${buffer}%`;
-  document.querySelector("#grossCapacity").textContent = `${Math.round(gross)} días-persona`;
-  document.querySelector("#commitCapacity").textContent = `${Math.round(commitment)} días-persona`;
-  document.querySelector("#reserveCapacity").textContent = `${Math.round(reserve)} días-persona`;
+  const focusValue = document.querySelector("#focusValue");
+  const bufferValue = document.querySelector("#bufferValue");
+  const grossCapacity = document.querySelector("#grossCapacity");
+  const commitCapacity = document.querySelector("#commitCapacity");
+  const reserveCapacity = document.querySelector("#reserveCapacity");
+
+  if (focusValue) focusValue.textContent = `${focus}%`;
+  if (bufferValue) bufferValue.textContent = `${buffer}%`;
+  if (grossCapacity) grossCapacity.textContent = `${Math.round(gross)} días-persona`;
+  if (commitCapacity) commitCapacity.textContent = `${Math.round(commitment)} días-persona`;
+  if (reserveCapacity) reserveCapacity.textContent = `${Math.round(reserve)} días-persona`;
 }
 
 function setupRiskTriage() {
   const output = document.querySelector("#riskOutput");
+  if (!output) return;
   document.querySelectorAll(".risk-cell").forEach((button) => {
     button.addEventListener("click", () => {
       output.textContent = button.dataset.risk;
@@ -499,9 +515,15 @@ document.querySelectorAll(".filter-button").forEach((button) => {
   });
 });
 
-searchInput.addEventListener("input", renderBacklog);
-document.querySelector("#printSite").addEventListener("click", () => window.print());
-document.querySelectorAll("#teamSize, #sprintDays, #focusFactor, #bufferFactor").forEach((input) => {
+if (searchInput) {
+  searchInput.addEventListener("input", renderBacklog);
+}
+
+if (printButton) {
+  printButton.addEventListener("click", () => window.print());
+}
+
+capacityInputs.forEach((input) => {
   input.addEventListener("input", updateCapacity);
 });
 
