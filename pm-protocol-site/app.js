@@ -5,8 +5,8 @@ const protocols = [
     title: "Program & Roadmap Management",
     thesis:
       "El roadmap es una herramienta viva para alinear outcomes, capacidad técnica y prioridades de negocio sin fijar falsas certezas.",
-    job:
-      "Colaborar con CEO y Head of Development para definir, mantener y ajustar continuamente un roadmap realista.",
+    focus:
+      "Definir, mantener y ajustar continuamente un roadmap realista conectado a outcomes, capacidad y aprendizaje.",
     image: "assets/images/thumbs/roadmap-framework.png",
     phases: [
       ["Alineación estratégica", "Traducir visión ejecutiva en outcomes medibles y criterios de decisión."],
@@ -28,8 +28,8 @@ const protocols = [
     title: "Scope Management & Delivery Accountability",
     thesis:
       "El alcance se protege antes del sprint: si una historia no está lista, no entra; si cambia, se evalúa impacto.",
-    job:
-      "Traducir requerimientos de negocio a scopes técnicos claros, priorizar y evitar expansión no controlada.",
+    focus:
+      "Traducir necesidades de negocio a scopes técnicos claros, priorizar y evitar expansión no controlada.",
     image: "assets/images/thumbs/scope-delivery.png",
     phases: [
       ["BRD → PRD → TSD", "Separar Why, What y How para mantener trazabilidad entre ROI, funcionalidad y arquitectura."],
@@ -51,14 +51,14 @@ const protocols = [
     title: "Engineering Operations & Capacity Planning",
     thesis:
       "La capacidad no es cantidad de personas: es ancho de banda productivo, foco, habilidades críticas y salud del equipo.",
-    job:
+    focus:
       "Evaluar capacidad, balancear iniciativas paralelas y anticipar restricciones de recursos.",
     image: "assets/images/thumbs/capacity-workflow.png",
     phases: [
       ["Capacidad neta", "Restar ceremonias, soporte, vacaciones, revisiones y aplicar focus factor de 70-85%."],
       ["Skill matrix", "Detectar cuellos de botella humanos y puntos únicos de falla antes de prometer fechas."],
       ["WIP limits", "Reducir cambio de contexto y forzar resolución: dejar de empezar y empezar a terminar."],
-      ["Scenario planning", "Modelar ausencias, retrasos de hiring, proyectos urgentes y cambios de prioridad."],
+      ["Scenario planning", "Modelar ausencias, retrasos de contratación, proyectos urgentes y cambios de prioridad."],
       ["Health monitor", "Revisar estrés, claridad de roles y carga cognitiva para sostener capacidad real."]
     ],
     controls: [
@@ -74,8 +74,8 @@ const protocols = [
     title: "Cross-functional Communication & Expectation Management",
     thesis:
       "La comunicación PM no es reportar todo: es darle a cada audiencia la precisión que necesita para decidir.",
-    job:
-      "Actuar como puente principal entre stakeholders de negocio e ingeniería, gestionando prioridades, restricciones y cambios.",
+    focus:
+      "Actuar como puente entre stakeholders de negocio e ingeniería, gestionando prioridades, restricciones y cambios.",
     image: "assets/images/thumbs/communication-workflow.png",
     phases: [
       ["Mapa de stakeholders", "Separar contribuidores y beneficiarios para evitar sobrecarga de información."],
@@ -97,7 +97,7 @@ const protocols = [
     title: "Vendor & Integration Governance",
     thesis:
       "Las integraciones se gestionan como sistemas de dependencia: scope, seguridad, entrega, monitoreo y salida.",
-    job:
+    focus:
       "Coordinar proveedores externos, pagos, PMS, channel managers, third-party tools y dependencias que impactan timelines.",
     image: "assets/images/thumbs/vendor-governance.png",
     phases: [
@@ -120,7 +120,7 @@ const protocols = [
     title: "Risk & Incident Management",
     thesis:
       "Un incidente es un riesgo que se materializó. Por eso el loop termina actualizando el registro de riesgos.",
-    job:
+    focus:
       "Identificar riesgos, planificar mitigación y coordinar incidentes con resolución y comunicación oportuna.",
     image: "assets/images/thumbs/risk-incident.png",
     phases: [
@@ -143,7 +143,7 @@ const protocols = [
     title: "Process & Continuous Improvement",
     thesis:
       "El proceso debe reflejar cómo trabaja realmente el equipo: simple, automatizado, medible y ajustable.",
-    job:
+    focus:
       "Diseñar workflows en Jira/Linear, adaptar Agile, mejorar rituales y sostener backlogs limpios y accionables.",
     image: "assets/images/thumbs/process-improvement.png",
     phases: [
@@ -164,27 +164,27 @@ const protocols = [
 
 const backlogItems = [
   {
-    title: "Narrativa hero para recruiter",
+    title: "Narrativa hero de modalidad de trabajo",
     area: "roadmap",
     priority: "Must",
     status: "Done",
-    story: "Como recruiter, quiero entender en 20 segundos la propuesta PM para evaluar fit inicial.",
-    acceptance: "Hero con rol, tesis, CTAs y evidencia cuantificada."
+    story: "Como visitante, quiero entender en 20 segundos cómo trabajo y qué sistema operativo uso.",
+    acceptance: "Hero con tesis, CTAs y evidencia cuantificada."
   },
   {
-    title: "Matriz JD → Protocolo",
+    title: "Principios de trabajo → Protocolo",
     area: "roadmap",
     priority: "Must",
     status: "Done",
-    story: "Como entrevistador, quiero mapear responsabilidades del rol contra mecanismos operativos.",
-    acceptance: "Tabla responsive con responsabilidad, operación y artefacto observable."
+    story: "Como lector, quiero ver los principios que conectan estrategia, producto, ingeniería y operación.",
+    acceptance: "Tabla responsive con principio, operación y artefacto observable."
   },
   {
     title: "Playbooks por dominio",
     area: "delivery",
     priority: "Must",
     status: "Done",
-    story: "Como Head of Development, quiero ver cómo se opera cada dominio sin leer documentos largos.",
+    story: "Como líder de equipo, quiero ver cómo se opera cada dominio sin leer documentos largos.",
     acceptance: "Tabs accesibles con fases, controles, outputs e imagen de evidencia."
   },
   {
@@ -200,7 +200,7 @@ const backlogItems = [
     area: "ops",
     priority: "Must",
     status: "Done",
-    story: "Como CEO, quiero entender compromisos realistas basados en capacidad y buffers.",
+    story: "Como sponsor de negocio, quiero entender compromisos realistas basados en capacidad y buffers.",
     acceptance: "Inputs editables y outputs de capacidad bruta, compromiso y reserva."
   },
   {
@@ -212,19 +212,19 @@ const backlogItems = [
     acceptance: "Matriz interactiva con acción recomendada por cuadrante."
   },
   {
-    title: "Plan 30/60/90",
+    title: "Plan 30/60/90 de entrada a un sistema",
     area: "roadmap",
     priority: "Must",
     status: "Done",
-    story: "Como hiring manager, quiero saber qué haría al entrar al rol.",
+    story: "Como equipo, quiero saber cómo entro a un contexto nuevo sin romper confianza.",
     acceptance: "Tres etapas con diagnóstico, control y predictibilidad."
   },
   {
-    title: "Backlog filtrable",
+    title: "Backlog filtrable del sitio",
     area: "delivery",
     priority: "Should",
     status: "Done",
-    story: "Como PM reviewer, quiero ver que el propio sitio fue tratado como producto.",
+    story: "Como visitante, quiero ver que el propio sitio fue tratado como producto.",
     acceptance: "Filtros por área, búsqueda y tarjetas con historia y aceptación."
   },
   {
@@ -236,11 +236,11 @@ const backlogItems = [
     acceptance: "Seis artefactos con propósito claro y lenguaje accionable."
   },
   {
-    title: "Galería de evidencia",
+    title: "Galería de evidencia visual",
     area: "evidence",
     priority: "Must",
     status: "Done",
-    story: "Como recruiter, quiero comprobar que el sitio se basa en material existente.",
+    story: "Como visitante, quiero comprobar que el sitio se basa en material existente.",
     acceptance: "Todas las infografías y mapas están disponibles en galería ampliable."
   },
   {
@@ -248,7 +248,7 @@ const backlogItems = [
     area: "evidence",
     priority: "Must",
     status: "Done",
-    story: "Como entrevistador técnico, quiero abrir los documentos base si necesito profundidad.",
+    story: "Como lector técnico, quiero abrir los documentos base si necesito profundidad.",
     acceptance: "Los nueve .docx están copiados y enlazados."
   },
   {
@@ -256,8 +256,24 @@ const backlogItems = [
     area: "evidence",
     priority: "Could",
     status: "Done",
-    story: "Como recruiter, quiero validar comunicación profesional en inglés.",
-    acceptance: "Sección English-ready con explicación ejecutiva del protocolo."
+    story: "Como lector internacional, quiero entender el protocolo en inglés profesional.",
+    acceptance: "Sección English-ready con explicación ejecutiva de cómo trabajo."
+  },
+  {
+    title: "North Star Metrics",
+    area: "roadmap",
+    priority: "Must",
+    status: "Done",
+    story: "Como product owner, quiero conectar el producto desde cero con una métrica de valor recurrente.",
+    acceptance: "Sección con NSM, árbol de métricas, inputs y guardrails."
+  },
+  {
+    title: "Design Thinking para producto from scratch",
+    area: "delivery",
+    priority: "Must",
+    status: "Done",
+    story: "Como equipo de producto, quiero ver cómo se descubre, define, prototipa y valida antes de construir.",
+    acceptance: "Loop de empatizar, definir, idear, prototipar y testear con foco en aprendizaje."
   }
 ];
 
@@ -317,7 +333,7 @@ function renderProtocol(index = 0) {
   protocolPanel.innerHTML = `
     <div class="protocol-hero">
       <div class="protocol-copy">
-        <p class="eyebrow">${item.job}</p>
+        <p class="eyebrow">${item.focus}</p>
         <h3>${item.title}</h3>
         <p>${item.thesis}</p>
         <div class="outcome-strip">${item.outputs.map((output) => `<span>${output}</span>`).join("")}</div>
