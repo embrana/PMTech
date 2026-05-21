@@ -499,7 +499,6 @@ button {
 
 .phase-list,
 .control-list,
-.source-ledger ul,
 .timeline-item ul {
   margin: 0;
   padding: 0;
@@ -1072,31 +1071,6 @@ button {
   font-weight: 800;
 }
 
-.source-ledger {
-  margin-top: 38px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: var(--paper);
-  padding: 24px;
-}
-
-.source-ledger h3 {
-  margin: 0 0 14px;
-}
-
-.source-ledger ul {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px 20px;
-}
-
-.source-ledger a {
-  color: var(--blue);
-  font-weight: 800;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 3px;
-}
-
 .english-section {
   background: var(--ink);
   color: var(--paper);
@@ -1281,7 +1255,6 @@ button {
   .artifact-grid,
   .gallery,
   .backlog-grid,
-  .source-ledger ul,
   .capacity-result,
   .control-grid {
     grid-template-columns: 1fr;

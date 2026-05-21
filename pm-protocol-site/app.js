@@ -168,7 +168,7 @@ const backlogItems = [
     area: "roadmap",
     priority: "Must",
     status: "Done",
-    story: "Como visitante, quiero entender en 20 segundos cómo trabajo y qué sistema operativo uso.",
+    story: "Presentar en menos de 20 segundos el enfoque operativo y la estructura general del framework.",
     acceptance: "Hero con tesis, CTAs y evidencia cuantificada."
   },
   {
@@ -176,7 +176,7 @@ const backlogItems = [
     area: "roadmap",
     priority: "Must",
     status: "Done",
-    story: "Como lector, quiero ver los principios que conectan estrategia, producto, ingeniería y operación.",
+    story: "Mostrar los principios que conectan estrategia, producto, ingeniería y operación.",
     acceptance: "Tabla responsive con principio, operación y artefacto observable."
   },
   {
@@ -184,7 +184,7 @@ const backlogItems = [
     area: "delivery",
     priority: "Must",
     status: "Done",
-    story: "Como líder de equipo, quiero ver cómo se opera cada dominio sin leer documentos largos.",
+    story: "Explicar cómo se opera cada dominio sin depender de documentos largos.",
     acceptance: "Tabs accesibles con fases, controles, outputs e imagen de evidencia."
   },
   {
@@ -192,7 +192,7 @@ const backlogItems = [
     area: "delivery",
     priority: "Should",
     status: "Done",
-    story: "Como stakeholder, quiero ver cómo una idea pasa a implementación sin perder trazabilidad.",
+    story: "Hacer visible cómo una idea pasa a implementación sin perder trazabilidad.",
     acceptance: "Timeline BRD, PRD, TSD/SDD, backlog y release."
   },
   {
@@ -200,7 +200,7 @@ const backlogItems = [
     area: "ops",
     priority: "Must",
     status: "Done",
-    story: "Como sponsor de negocio, quiero entender compromisos realistas basados en capacidad y buffers.",
+    story: "Traducir capacidad y buffers en compromisos realistas y observables.",
     acceptance: "Inputs editables y outputs de capacidad bruta, compromiso y reserva."
   },
   {
@@ -208,7 +208,7 @@ const backlogItems = [
     area: "ops",
     priority: "Should",
     status: "Done",
-    story: "Como PM, quiero mostrar cómo se decide mitigar, reducir o aceptar un riesgo.",
+    story: "Mostrar cómo se decide mitigar, reducir o aceptar un riesgo de delivery.",
     acceptance: "Matriz interactiva con acción recomendada por cuadrante."
   },
   {
@@ -216,7 +216,7 @@ const backlogItems = [
     area: "roadmap",
     priority: "Must",
     status: "Done",
-    story: "Como equipo, quiero saber cómo entro a un contexto nuevo sin romper confianza.",
+    story: "Resumir un enfoque de entrada a un contexto nuevo sin perder confianza ni control operativo.",
     acceptance: "Tres etapas con diagnóstico, control y predictibilidad."
   },
   {
@@ -224,7 +224,7 @@ const backlogItems = [
     area: "delivery",
     priority: "Should",
     status: "Done",
-    story: "Como visitante, quiero ver que el propio sitio fue tratado como producto.",
+    story: "Evidenciar que el propio sitio fue tratado como producto con alcance, criterio y estado.",
     acceptance: "Filtros por área, búsqueda y tarjetas con historia y aceptación."
   },
   {
@@ -232,7 +232,7 @@ const backlogItems = [
     area: "ops",
     priority: "Should",
     status: "Done",
-    story: "Como equipo, quiero saber qué documentos y tableros se instalarían en la operación.",
+    story: "Mostrar qué documentos y tableros sostienen la operación y la toma de decisiones.",
     acceptance: "Seis artefactos con propósito claro y lenguaje accionable."
   },
   {
@@ -240,31 +240,23 @@ const backlogItems = [
     area: "evidence",
     priority: "Must",
     status: "Done",
-    story: "Como visitante, quiero comprobar que el sitio se basa en material existente.",
+    story: "Aportar evidencia visual que refuerce la profundidad del framework presentado.",
     acceptance: "Todas las infografías y mapas están disponibles en galería ampliable."
-  },
-  {
-    title: "Ledger de documentos fuente",
-    area: "evidence",
-    priority: "Must",
-    status: "Done",
-    story: "Como lector técnico, quiero abrir los documentos base si necesito profundidad.",
-    acceptance: "Los nueve .docx están copiados y enlazados."
   },
   {
     title: "Resumen profesional en inglés",
     area: "evidence",
     priority: "Could",
     status: "Done",
-    story: "Como lector internacional, quiero entender el protocolo en inglés profesional.",
-    acceptance: "Sección English-ready con explicación ejecutiva de cómo trabajo."
+    story: "Presentar el framework en inglés profesional para contextos internacionales.",
+    acceptance: "Sección English-ready con explicación ejecutiva del modelo operativo."
   },
   {
     title: "North Star Metrics",
     area: "roadmap",
     priority: "Must",
     status: "Done",
-    story: "Como product owner, quiero conectar el producto desde cero con una métrica de valor recurrente.",
+    story: "Conectar producto desde cero con una métrica de valor recurrente y sus guardrails.",
     acceptance: "Sección con NSM, árbol de métricas, inputs y guardrails."
   },
   {
@@ -272,7 +264,7 @@ const backlogItems = [
     area: "delivery",
     priority: "Must",
     status: "Done",
-    story: "Como equipo de producto, quiero ver cómo se descubre, define, prototipa y valida antes de construir.",
+    story: "Mostrar cómo se descubre, define, prototipa y valida antes de construir.",
     acceptance: "Loop de empatizar, definir, idear, prototipar y testear con foco en aprendizaje."
   }
 ];
